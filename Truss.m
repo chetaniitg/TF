@@ -118,9 +118,4 @@ fprintf(fid,'---------\n');
 for i = 1:8
    fprintf(fid,'%12.4e\n\n',Fr(i));
 end
-% fprintf(fid,'The Reaction forces are\n');
-% fprintf(fid,'=======================\n\n');
-% fprintf(fid,'Dof    Reaction force\n');
-% fprintf(fid,'===    ==============\n');
-% fprintf(fid,'%2i\t\t%10.4e\n',fdof');
-% save('filename','fid')
+
