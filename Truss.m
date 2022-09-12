@@ -16,7 +16,7 @@ k3 = elestiff(E, A, x3);
 x4 = [40, 30, 0, 0];
 k4 = elestiff(E, A, x4);
 
-% Assembly
+% Assembly matrix
 K = zeros(8,8);
 F = zeros(8,1);
 
@@ -37,7 +37,7 @@ ureduce = inv(Kreduce)*Freduce;
 
 % Finding Reaction Force
 un = zeros(8,1);
-un([3,5:6]) = ureduce;
+un([3,5:6]) = ureduce
 Fr = K*un
 
 
